@@ -11,7 +11,16 @@ p{
 
 h1{
     margin-bottom: 0;
-    color: #00425A
+    color: #00425A;
+    font-family: 'Belanosima';
+}
+
+h2{
+    font-family: 'Belanosima';
+}
+
+h3{
+    font-family: 'Belanosima';
 }
 
 .logo{
