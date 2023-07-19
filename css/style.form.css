@@ -1,0 +1,82 @@
+*{
+    font-family:'Poppins';
+    box-sizing: border-box;     
+    
+}
+
+h1{
+    color:#00425A;
+}
+
+.caja-texto{
+    height: 3.3em;
+    box-shadow: -1px 2px 5px #18182377;
+    border-radius: 5px;
+    border: 0;
+    
+}
+
+/*¿Cómo quitarle el borde negro a las cajas input?*/
+.caja-texto:focus{
+    box-shadow: 3px 5px 5px #FC7300; 
+}
+
+.caja-texto:valid{
+    box-shadow: 3px 5px 5px #1F8A70; 
+}
+
+.caja-comentario{
+    box-shadow: -1px 2px 5px #18182377;
+    border-radius: 5px;
+    border: 0;
+}
+
+.caja-comentario:focus{
+    box-shadow: 3px 5px 5px #FC7300; 
+}
+
+.form{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;  
+    gap: 1em;    
+    font-weight: bold;
+    color:#00425A;    
+}
+
+.boton{
+    background-color: #00425A;
+    color:#EFF5F5;
+    border-radius: 5px;
+    border: 0;
+    height: 2em;
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.boton:hover{
+    background-color:#1F8A70 ;
+}
+
+.volver{
+    text-align: center;
+}
+
+.boton-volver{
+    background-color: #00425A;
+    border-radius: 5px;
+    border: 0;
+    height: 2em;
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+}
+
+.boton-volver > a{
+    color: #EFF5F5;
+    text-decoration: none;
+}
+
+.boton-volver:hover{
+    background-color:#1F8A70 ;
+}

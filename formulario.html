@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Inscripcion para futuros alumnos">
+        <meta name="author" content="Pablo Araoz">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap">
+        <link rel="stylesheet" href="./css/style.form.css">
+        <title>Formulario de inscripción</title>
+    </head>
+    
+    <body>
+        <h1>Formulario de inscripción</h1>    
+        <h2>Escribinos para registrar a tu hijo/a como nuevo/a alumno/a</h2>
+        <section id="formulario">
+            <form action="" class="form">
+                <label for="idNombre">Nombre</label>
+                <input type="text" name="nombre" id="idNombre" class="caja-texto" placeholder="Ingrese su nombre" required>
+                
+                <label for="idApellido">Apellido</label>
+                <input type="text" name="apellido" id="idApellido" class="caja-texto" placeholder="Ingrese su apellido" required>  
+                
+                <label for="idApellido">Edad</label>
+                <input type="number" name="apellido" id="idApellido" class="caja-texto" placeholder="Ingrese la edad" required> 
+
+                <label for="idApellido">Teléfono de contacto</label>
+                <input type="number" name="apellido" id="idApellido" class="caja-texto" placeholder="Ingrese un número de teléfono" required> 
+
+                <label for="email">Correo electrónico</label>
+                <input type="email" name="correo" id="email" class="caja-texto"  placeholder="nombre@dominio" required>
+
+                <label for="rango">¿Qué tan buena te pareció la página web de la escuela?</label>                    
+                1 mínimo - 10 máximo<input type="range" name="rango" id="rango" min="0" max="100" step="10" required>
+
+                <label for="comentario">Comentario:</label>
+                <textarea name="comentario" id="comentario" class="caja-comentario" cols="30" rows="10" placeholder="Escriba su comentario"></textarea>
+
+                <button type="submit" class="boton">Enviar</button>
+            </form>
+        </section>
+
+        <div class="volver">
+            <button type="link" class="boton-volver"><a href="index.html">Volver a la página</a></button>
+        </div>
+    </body>
+</html>
