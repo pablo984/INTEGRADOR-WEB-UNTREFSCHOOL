@@ -1,7 +1,10 @@
 *{
     font-family:'Poppins';
-    box-sizing: border-box;     
-    
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 p{
@@ -21,6 +24,14 @@ h2{
 
 h3{
     font-family: 'Belanosima';
+}
+
+.descripcion-foto{
+    font-family: 'Belanosima';
+    text-align: center;
+    font-size: 1.8rem;
+    color: #1f8a6fd0;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.459); 
 }
 
 .logo{
@@ -97,11 +108,6 @@ h3{
     background-color: #EFF5F5;
 }
 
-/* .nav{
-    grid-area: nav;
-    background-color: rgba(0, 128, 0, 0.658);
-} */
-
 .main{
     grid-area: main;
     background-color: #EFF5F5;    
@@ -114,18 +120,23 @@ h3{
     padding-bottom: 3em;
 }
 
-.grid-fotos{
-    display: grid;
-    
-}
-
-.foto1{
-    background-color: orange;
-    height: 300px;
-}
-
 .descripcion{    
     border-bottom: 2px solid black;
+}
+
+.lista{
+    text-align: start;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.propuesta-educativa{
+    border-top: 2px solid black;
+}
+
+.explicacion-propuesta{
+    width: 80%;
+    margin: auto;
 }
 
 .pd{
@@ -138,8 +149,16 @@ h3{
     font-weight: bold;
 }
 
-#ultimas-noticias{
+.u-noticias{
     border-top: 2px solid black;
+    width: 80%;
+    margin: auto;
+}
+
+.p-u-noticias{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
 }
 
 .alumnos-nuevos{
@@ -149,10 +168,6 @@ h3{
     padding-left: 10px;
     padding-right: 10px;
     max-width: 100vw;
-}
-
-#formulario{
-    border-top: 2px solid black;
 }
 
 .grilla{
@@ -175,14 +190,17 @@ h3{
 }
 
 .autoridades > h3{
+    margin-top: 45px;
     margin-bottom: 0px;
+
     color:#FC7300;
-    text-align: start;
+    text-align: center;
 }
 
 .p-autoridades{
     white-space: pre-line;
     margin-top: 0;
+    text-align: center;
 }
 
 
@@ -193,6 +211,7 @@ h3{
 
 .derechos{
     font-size: 14px;
+    font-size: 0.7rem;
     text-align: center;
     margin-top: 5em;
     border-top: 1px solid #EFF5F5;
@@ -201,7 +220,7 @@ h3{
     padding-bottom: 4px;
 }
 
-/*Tablet*/
+/******** VISTA PARA TABLET (768px) ****************/
 @media screen and (min-width:768px) {
     .nav{        
         flex-direction: row;
@@ -210,47 +229,47 @@ h3{
     }
 
     h1{
+        font-size: 2.4rem;
+    }
+
+    h2{
         font-size: 2rem;
     }
     
-    p{
-        font-size: 1.2rem;
-    }
-
     .p-header{
         font-size: 1.6rem;
     }
 
     .links{
+        width: 100px;
         font-weight: 800;  
         font-size: 1.1rem;      
     }
 
-    #ultimas-noticias{
-        font-size: 1.2rem;
+    .alumnos-nuevos{
+        font-size: 1.4rem;
+        font-weight: 800;
     }
 
     .footer{
         font-size: 1.3rem;
-        
-    }
-
-    .autoridades > h3{
-        text-align: center;
-    }
-    
-    .p-autoridades{
-        text-align: center;        
     }
 
     .derechos{
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
 }
 
 
-/*Tablet en Horizontal*/
+/******** VISTA PARA TABLET HORIZONTAL(1280px) ****************/
 @media screen and (min-width: 1280px) {
+    .contenedor-grid{
+        width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+        gap:0;
+    }
+
     h1{
         font-size: 3.3rem;
     }
@@ -260,20 +279,15 @@ h3{
     }
 
     .links{
-        font-weight: 800;  
-        font-size: 1.4rem;      
+        font-weight:bold;          
     }
 
     .grilla {
         display: grid;
         justify-content: center;
-        grid-template-columns: 1fr 1fr; 
-        grid-template-rows: 1fr 1fr;
-        gap: 1em;    
-        margin: 0em 2em 0em 2em;
-        grid-template-areas:
+        grid-template:
           "img1 img2" 
-          "img3" "img3";
+          "img3 img4";
       }
       
     .grilla {
@@ -289,8 +303,12 @@ h3{
                 
     }    
 
+    .grilla {
+        grid-area: img4;
+    }
+
     .redes-sociales{
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
 
     .telefonos-horarios{
@@ -303,7 +321,64 @@ h3{
 
     .derechos{
         font-size: 1.3rem;
+    }    
+}
+
+/******** VISTA PARA MONITOR FULL HD(1920px) ****************/
+@media screen and (min-width: 1920px) {
+    .q-somos{
+        width: 80%;
+        margin: auto;
     }
+
+    .pqelegirnos{
+        width: 80%;
+        margin: auto;
+    }
+
+    .explicacion-propuesta{
+        width: 75%;
+        margin: auto;
+    }
+
+    .grilla{
+        width: 80%;
+        margin: auto;
+    }
+
+    .imagen-grilla{        
+        filter: grayscale(80%); 
+        transition: 1s;       
+    }
+
+    .imagen-grilla:hover{
+        transform: scale(1.10);
+        filter: grayscale(0%);
+        transition: 1s;
+    }
+
+    .u-noticias{
+        width: 75%;
+        margin: auto;
+    }
+
+    .p-u-noticias{
+        font-size: 3rem;
+    }
+
+    .alumnos-nuevos{
+        font-size: 1.8rem;
+    }
+
+    .ubicacion{
+        width: 80%;
+        margin: auto;
+    }
+
     
+
+
+
+
 }
 
