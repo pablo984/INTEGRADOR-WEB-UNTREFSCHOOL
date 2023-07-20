@@ -181,6 +181,11 @@ h3{
     justify-content: space-around;    
 }
 
+.ubicacion{
+    width: 80%;
+    margin: auto;
+}
+
 .pht{
     text-align: center;
 }
@@ -246,20 +251,25 @@ h3{
         font-size: 1.1rem;      
     }
 
+    
     .alumnos-nuevos{
         font-size: 1.4rem;
         font-weight: 800;
-    }
+    }    
 
     .footer{
         font-size: 1.3rem;
+    }
+
+    .redes-sociales{
+        width: 90%;
+        margin: auto;
     }
 
     .derechos{
         font-size: 1.2rem;
     }
 }
-
 
 /******** VISTA PARA TABLET HORIZONTAL(1280px) ****************/
 @media screen and (min-width: 1280px) {
@@ -306,13 +316,11 @@ h3{
     .grilla {
         grid-area: img4;
     }
-
-    .redes-sociales{
-        font-size: 1.8rem;
-    }
-
+      
     .telefonos-horarios{
         font-size: 1.6rem;
+        width: 80%;
+        margin: auto;
     }
     
     .autoridades{
@@ -370,11 +378,35 @@ h3{
         font-size: 1.8rem;
     }
 
-    .ubicacion{
+    .ubicacion-y-redes{
         width: 80%;
         margin: auto;
+        display: grid;
+        justify-content: center;
+        grid-template:
+         "area1 area2" auto /
+          1fr   1fr;
     }
 
+    .ubicacion-y-redes{
+        grid-area: area1;
+    }
+
+    .ubicacion-y-redes{
+        grid-area: area2;
+    }
+
+    .redes-sociales{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .parrafo-redes{
+        font-size: 1.3rem;       
+    }
+
+    
     
 
 
