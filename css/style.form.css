@@ -12,8 +12,6 @@ body{
     padding: 10px;
 }
 
-
-
 h1{
     color:#00425A;
     font-family: 'Belanosima';
@@ -26,12 +24,14 @@ h1{
     height: 3.3em;
     box-shadow: -1px 2px 5px #18182377;
     border-radius: 5px;
+    outline-color: rgba(0, 0, 0, 0.192);
     border: 0;
 }
 
 /*¿Cómo quitarle el borde negro a las cajas input?*/
 .caja-texto:focus{
     box-shadow: 3px 5px 5px #FC7300; 
+    
 }
 
 .caja-texto:valid{
@@ -40,6 +40,7 @@ h1{
 
 .caja-comentario{
     box-shadow: -1px 2px 5px #18182377;
+    outline-color: rgba(0, 0, 0, 0.192);
     border-radius: 5px;
     border: 0;
 }

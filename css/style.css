@@ -132,6 +132,7 @@ h3{
 
 .propuesta-educativa{
     border-top: 2px solid black;
+
 }
 
 .explicacion-propuesta{
@@ -251,10 +252,24 @@ h3{
         font-size: 1.1rem;      
     }
 
+    .explicacion-propuesta{
+        width: 90%;
+        margin: auto;
+    }
     
     .alumnos-nuevos{
         font-size: 1.4rem;
         font-weight: 800;
+    }   
+    
+    .u-noticias{
+        width: 90%;
+        margin: auto;
+    }
+
+    .ubicacion{
+        width: 90%;
+        margin: auto;
     }    
 
     .footer{
@@ -262,7 +277,7 @@ h3{
     }
 
     .redes-sociales{
-        width: 90%;
+        width: 100%;
         margin: auto;
     }
 
@@ -395,22 +410,15 @@ h3{
     .ubicacion-y-redes{
         grid-area: area2;
     }
-
+    
     .redes-sociales{
         display: flex;
         flex-direction: column;
-
     }
 
     .parrafo-redes{
         font-size: 1.3rem;       
     }
-
-    
-    
-
-
-
 
 }
 
